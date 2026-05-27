@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Kode verifikasi Google Anda -->
+    <meta name="google-site-verification" content="f9836b4b16fb15d6" />
     
-    <!-- PASTE KODE GOOGLE ANDA DI BAWAH INI -->
-    <meta name="google-site-verification" content=""f9836b4b16fb15d6" />
-    <!-- ----------------------------------- -->
-
     <title>AutoKarpet - Exclusive Car Mats</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root { --bg-dark: #0a0a0a; --bg-card: #151515; --text-light: #f5f5f5; --text-gray: #a0a0a0; --accent-gold: #d4af37; --discount-red: #ff4757; --border-dark: #2a2a2a; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background-color: var(--bg-dark); color: var(--text-light); overflow-x: hidden; }
-        header { position: fixed; top: 0; width: 100%; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-dark); z-index: 1000; }
-        .logo { font-family: 'Oswald', sans-serif; font-size: 28px; font-weight: 600; color: var(--text-light); letter-spacing: 2px; text-transform: uppercase; }
-        .logo span { color: var(--accent-gold); }
-        .hero { height: 60vh; background: linear-gradient(to right, rgba(10,10,10,0.9), rgba(10,10,10,0.3)), url('https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=1600&q=80') center/cover; display: flex; align-items: center; padding: 0 50px; margin-top: 70px; border-bottom: 2px solid var(--accent-gold); }
-        .hero-text h1 { font-family: 'Oswald', sans-serif; font-size: 4rem; text-transform: uppercase; margin-bottom: 15px; }
-        .hero-text h1 span { color: var(--accent-gold); }
-        .container { max-width: 1400px; margin: 0 auto; padding: 50px 20px; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
-        .product-card { background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: 12px; overflow: hidden; padding: 20px; text-align: center; }
-        .btn-buy { display: block; width: 100%; padding: 12px; background: transparent; color: var(--accent-gold); border: 1px solid var(--accent-gold); border-radius: 6px; cursor: pointer; text-transform: uppercase; margin-top: 15px; }
-        .btn-buy:hover { background: var(--accent-gold); color: var(--bg-dark); }
-        .wa-float { position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; z-index: 1000; }
+        body { background-color: var(--bg-dark); color: var(--text-light); }
+        .container { max-width: 1200px; margin: 50px auto; padding: 20px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .product-card { background: var(--bg-card); padding: 20px; border: 1px solid var(--border-dark); border-radius: 12px; text-align: center; }
+        .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+        .btn-buy { display: block; width: 100%; padding: 10px; margin-top: 15px; background: var(--accent-gold); border: none; border-radius: 5px; cursor: pointer; }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">AUTO<span>KARPET</span></div>
-    </header>
-    <section class="hero">
-        <div class="hero-text"><h1>Presisi.<br><span>Elegansi.</span></h1></div>
-    </section>
     <div class="container">
+        <h1>Katalog AutoKarpet</h1>
         <div class="product-grid">
-            <div class="product-card"><h3>Innova Zenix</h3><button class="btn-buy" onclick="beliWA('Innova Zenix')">Pesan</button></div>
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1605330835409-58b29f046de8?auto=format&fit=crop&w=600&q=80" alt="Innova Zenix">
+                <h3>Innova Zenix</h3>
+                <button class="btn-buy" onclick="window.open('https://wa.me/6281234567890')">Pesan Sekarang</button>
+            </div>
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=600&q=80" alt="Fortuner">
+                <h3>Fortuner GR</h3>
+                <button class="btn-buy" onclick="window.open('https://wa.me/6281234567890')">Pesan Sekarang</button>
+            </div>
+            <!-- Produk 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="BMW">
+                <h3>BMW 3 Series</h3>
+                <button class="btn-buy" onclick="window.open('https://wa.me/6281234567890')">Pesan Sekarang</button>
+            </div>
+            <!-- Produk 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=600&q=80" alt="Honda HRV">
+                <h3>Honda HRV</h3>
+                <button class="btn-buy" onclick="window.open('https://wa.me/6281234567890')">Pesan Sekarang</button>
+            </div>
         </div>
     </div>
-    <a href="https://wa.me/6281234567890" class="wa-float" target="_blank">WA</a>
-    <script>
-        function beliWA(tipe) { window.open("https://wa.me/6281234567890?text=Minat " + tipe, '_blank'); }
-    </script>
 </body>
 </html>
